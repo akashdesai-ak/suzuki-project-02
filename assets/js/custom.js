@@ -530,3 +530,5 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 })(jQuery);
 
+
+// product color change
