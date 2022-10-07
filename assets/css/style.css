@@ -7552,3 +7552,92 @@ p.form-message.success {
   color: #D23B3B;
   text-transform: uppercase;
 }
+
+.workshop-img{
+  overflow: hidden;
+}
+
+.workshop-img img{
+  transition: 4s ease-in-out;
+}
+
+.workshop-img img:hover{
+transform: scale(1.2);
+}
+
+/* Enquiry Button */
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-enq {
+  min-width: 300px;
+  min-height: 60px;   
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #fff;
+  background: #D23B3B;
+background: linear-gradient(90deg, #D23B3B 0%, #D23B3B 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #D23B3B;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+
+.button-enq:hover, .button-enq:focus {
+  /* color: var(--blue); */
+  background-color: #D23B3B !important;
+  letter-spacing: 5px;
+  transform: translateY(-6px);
+}
+
+.button-enq:hover::before, .button-enq:focus::before {
+  opacity: 1;
+}
+
+.button-enq::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #D23B3B;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button-enq:hover::after,.button-enq:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.btn-enquiry-container{
+  padding-bottom: 50px;
+  padding-top: 120px;
+    }
+  
