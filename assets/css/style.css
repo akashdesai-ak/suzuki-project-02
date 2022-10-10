@@ -7641,3 +7641,19 @@ background: linear-gradient(90deg, #D23B3B 0%, #D23B3B 100%);
   padding-top: 120px;
     }
   
+    .gallery-img{
+      overflow: hidden;
+      
+    }
+    .gallery-img a img{
+      overflow: hidden;
+      transition: .5s ease-in-out;
+      filter:grayscale(80%);
+      
+      
+    }
+    .gallery-img:hover img{
+      transform: scale(1.05);
+      filter:grayscale(0);
+      
+    }
